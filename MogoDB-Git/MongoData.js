@@ -6,9 +6,9 @@
 
 angular.module('elvenApp', ['pres'])
 .constant('CONFIG', {
-    DB_NAME: 'elvenlab01',
-    COLLECTION: 'address',
-    API_KEY: 'qfSxFoUGHBA1EuUlqhux_op2fy6oF_wy'
+    DB_NAME: 'subscribers',
+    COLLECTION: 'Prog270',
+    API_KEY: 'JjL0Mtiw7v-qf-xnRB3QoTQI3R8zxwNu'
 })
 .controller('MyController', function($scope, $http, presidents) {
     $scope.hint = "<p>Start with <strong>node server.js</strong> to retrieve JSON from Server</p>";
