@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html ng-app="elvenApp">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Visit Machu-Picchu</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+		<link href="index.css" rel="stylesheet" type="text/css" />
+		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="angular.js"></script>
+		<script src="angular-resource.js"></script>
+		<script src="index.js"></script>
+		<script src="MongoData.js"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand" href="index.html">Machu-Picchu</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="Database.html">Presidents</a>
+						<li><a href="Contacts.html">Contact</a></li>
+				
+						
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="starter-template">
+
+				<div id='drawHere01' class='draw-target'></div>
+				<div id='drawHere02' class='draw-target'></div>
+				<div id="monogoData" ng-controller="MyController">
+					
+					</ul>
+				
+				</div>
+			</div>
+
+		</div><!-- /.container -->
+			<div class="container">
+			<div class="starter-template">
+
+    			<h1 id="machu-picchu">Machu-Picchu</h1>
+                <p><img alt="Alt text" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Machu_Picchu_Panorama.jpg/800px-Machu_Picchu_Panorama.jpg" title="Picchucadora" /></p>
+                <h2 id="adventure-tours">Adventure Tours</h2>
+                <p>Feeling the adrenaline through your body while you’re doing some trekking, or paddling over the Vilcanota River is priceless, and is one of many reasons that you can’t miss our Machu Picchu Adventure tours, we got for you a variety of budgets so you can enjoy our services.</p>
+                <p>For those who love the adventure, the Peruvian Andes are ideal for trekking, camping and mountain climbing. The mountain is surrounded by more than 15,000 lakes, snow-capped mountains: peaks over 6000 meters, wooded valleys and picturesque villages.
+                Explore one of the wonders of the modern world and practice diverse activities of your preference at the Vilcanota River or at the high mountains between other interesting places full of adventure, while enjoying the most amazing flora and fauna of its surroundings.
+                These adventure tours are specially created for you to enjoy a great and unforgettable experience which offers the perfect trip to anyone who wants to meet and spend great and amazing adventures.</p>
+                <p><img alt="Alt text" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Zipline.JPG/320px-Zipline.JPG" title="Optional title" /></p>
+                <h2 id="where-to-stay">Where to stay</h2>
+                <p>The ancient and wise city of Cusco has one of the most modern Seven Wonders of the World, this is the Machu Picchu Sanctuary, which contains several structures that you can visit and charge your positive energies.</p>
+                <p>But you can’t do anything unless you check in one of the Machu Picchu Hotels, there are many for your budget, and one of them is the luxurious Machu Picchu Sanctuary Lodge, with a specific location ideal for your travel through the ancient Citadel. If you want other places to stay, check other options in the Machu Picchu Hotel, where you can see other prices and how comfortable the Hotels are.</p>
+                <p><img alt="Alt text" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hote_Frontal.jpg/320px-Hote_Frontal.jpg" title="Optional title" /></p>
+                <h2 id="best-places-to-eat">Best places to eat</h2>
+                <p>In recent years, Peru’s eclectic cuisine has earned acknowledgement as one of the world’s finest. But while quinoa and pisco sour cocktails have migrated to become favorites around the world, the best Peruvian specialties are still found in their home country. Here are ten to try en route to Machu Picchu.</p>
+                <p><img alt="Alt text" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Cooked_mussels_DSC09244.JPG/320px-Cooked_mussels_DSC09244.JPG" title="Cooked mussels" /></p>
+                <h2 id="map-your-adventure">Map your adventure</h2>
+                <p>Machu Picchu´s Maps :Before you begging to think about traveling around Cusco and other places, you must know how the sectors are distributed on each visited place, and that´s why we got the Machu Picchu Maps, that shows you a general view of all this great Sanctuary. </p>
+                <p><img alt="Alt text" src="http://upload.wikimedia.org/wikipedia/commons/4/41/Plano_politic.jpg" title="Map" /></p>
+					
+					</ul>
+					<div ng-bind-html-unsafe="hint"></div>
+				</div>
+			</div>
+
+		</div><!-- /.container -->
+
+	</body>
+</html>
