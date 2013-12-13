@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html ng-app="elvenApp">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Database</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+		<link href="index.css" rel="stylesheet" type="text/css" />
+		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="angular.js"></script>
+		<script src="angular-resource.js"></script>
+		<script src="index.js"></script>
+		<script src="MongoData.js"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand" href="index.html">Machu-Picchu</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li Class="active"><a href="Database.html">Presidents</a>
+						<li><a href="Contacts.html">Contact</a></li>
+					
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="starter-template">
+
+				<h1>History</h1>
+
+				<div id='drawHere01' class='draw-target'></div>
+				<div id='drawHere02' class='draw-target'></div>
+				<div id="monogoData" ng-controller="MyController">
+					<h1 id="can-you-match-the-presidents-portraits">Can you match the President's Portraits??</h1>
+                    <pre><code>Under the United States Constitution, the President of the United States is the head of state and head of government of the United States. As chief of the executive branch and head of the federal government as a whole, the presidency is the highest political office in the United States by influence and recognition. 
+                    Wikipedia 2013
+                    </code></pre>
+                    <ol>
+                    <li>George Washington</li>
+                    <li>John Adams</li>
+                    <li>Thomas Jefferson</li>
+                    <li>James Madison</li>
+                    <li>James Monroe</li>
+                    </ol>
+                    <h2 id="a">A <img alt="Alt text" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/JamesMadison.jpg/406px-JamesMadison.jpg" /></h2>
+                    <h2 id="b">B <img alt="Alt text" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/GSJamesMonroe.jpg/384px-GSJamesMonroe.jpg" /></h2>
+                    <h2 id="c">C <img alt="Alt text" src="http://upload.wikimedia.org/wikipedia/commons/4/46/T_Jefferson_by_Charles_Willson_Peale_1791_2.jpg" /></h2>
+                    <h2 id="d">D <img alt="Alt text" src="http://upload.wikimedia.org/wikipedia/commons/4/44/JohnAdams_2nd_US_President.jpg" /></h2>
+                    <h2 id="e">E <img alt="Alt text" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/401px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg" /></h2>
+					<h1>Database - US Presidents</h1>
+					<p>Rows in DB: {{presidentsLength}}</p>
+						<li ng-repeat="president in presidents">
+							<p>{{president.getPresidentName()}}<br/>
+								TermStart: {{president.getTermStart()}}<br/>
+								TermEnd: {{president.getTermEnd()}}</p>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+
+		</div><!-- /.container -->
+
+	</body>
+</html>
